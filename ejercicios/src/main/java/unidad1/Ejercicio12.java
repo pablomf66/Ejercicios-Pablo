@@ -1,6 +1,7 @@
 package unidad1;
 
 import java.util.Scanner;
+
 public class Ejercicio12 {
 
 	public static void main(String[] args) {
@@ -31,6 +32,8 @@ public class Ejercicio12 {
 		q = 0.212*r - 0.528*g + 0.311*b;
 		
 		System.out.printf("Y: %.3f, I: %.3f, Q: %.3f", y, i, q);
+		
+		// aqui se usa el Scanner como otro metodo de lectura de datos
 		
 		
 		
