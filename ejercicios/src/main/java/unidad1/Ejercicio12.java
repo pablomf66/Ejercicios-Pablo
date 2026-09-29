@@ -31,9 +31,15 @@ public class Ejercicio12 {
 		i = 0.596*r - 0.275*g - 0.321*b;
 		q = 0.212*r - 0.528*g + 0.311*b;
 		
-		System.out.printf("Y: %.3f, I: %.3f, Q: %.3f", y, i, q);
+		System.out.printf("Y: %.3f, I: %.3f, Q: %.3f %n", y, i, q);
+		
+		char c = "HolaMundo".charAt(0);
+		String s = "Adios Mundo🛝";
+		s += " cruel";
+		IO.print(s);
 		
 		// aqui se usa el Scanner como otro metodo de lectura de datos
+		
 		
 		
 		
