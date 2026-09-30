@@ -22,7 +22,7 @@ public class Ejercicio05 {
 		boolean xorFT = f ^ t;
 		boolean xorFF = f ^ f;
 		
-		System.out.printf("  A    B  |  %-6s|  %-6s|  %-6s|%n", "or", "and", "xor");
+		System.out.printf("  A      B  |  %-6s|  %-6s|  %-6s|%n", "or", "and", "xor");
 		System.out.println("-----------------------------------------");
 		System.out.printf("True  True  |  %-6s|  %-6s|  %-6s|%n",orTT, andTT, xorTT);
 		System.out.printf("True  False |  %-6s|  %-6s|  %-6s|%n",orTF, andTF, xorTF);

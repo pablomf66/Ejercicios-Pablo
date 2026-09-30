@@ -12,10 +12,14 @@ public class Ejercicio07 {
 		// linea = IO.readln("Tiempo: ");    otra forma
 		// t = Double.parseDouble(linea);
 		
-		// t = Double.parseDouble(IO.readln("Tiempo: "));  esto se podir usar si declaro la variables arriba y luego pongo la expresion aqui
+		// t = Double.parseDouble(IO.readln("Tiempo: "));  esto se podir usar si declaro la variables arriba y 
+		//luego pongo la expresion aqui
+		
 		// d = (5d * t) +((Math.pow(t, 2)) / 2d);
 		
-		System.out.println("Distancia: " + /*String.valueOf(d)*/ d  + " metros");  // String.valueOf(d) convierte d a tipo string para poder concatenar 3 strings (no es obligatorio ya que java lo hace solo)
+		System.out.println("Distancia: " + /*String.valueOf(d)*/ d  + " metros");  
+		// String.valueOf(d) convierte d a tipo string para poder concatenar 3 strings 
+		// (no es obligatorio ya que java lo hace solo)
 
 	}
 
