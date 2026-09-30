@@ -1,6 +1,6 @@
 package unidad1;
 
-public class Ejercicio6 {
+public class Ejercicio06 {
 
 	public static void main(String[] args) {
 		// IO.println(1234d / 532d); /// IO.println(1234.0 / 532); tambien vale, cambia (float) por un numero .0 (se convierte en double)
