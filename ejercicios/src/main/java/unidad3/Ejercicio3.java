@@ -7,8 +7,8 @@ public class Ejercicio3 {
 		String s2 = IO.readln("Subcadena: ");
 		int contador = 0;
 		
-		for (i = 0; i<s1; i++) {
-			
+		for (i = 0; i<s1.length() - s2.length(); i++) {
+			if
 			
 		}
 
