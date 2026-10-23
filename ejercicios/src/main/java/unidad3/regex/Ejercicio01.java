@@ -15,7 +15,7 @@ public class Ejercicio01 {
 //		String linea = in.readLine();
 //		while (linea != null) {
 //			
-//			linea = in.readLine();
+//			linea = in.readLine(); 
 //		}
 		
 		String linea;
