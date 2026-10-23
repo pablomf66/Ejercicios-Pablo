@@ -6,20 +6,27 @@ import java.util.regex.Pattern;
 public class Ejercicio03 {
 
 	public static void main(String[] args) {
-		Pattern p = Pattern.compile(">>([\\p{L}\\d_]+)<<(\\d(?:,\\d{1,2})?):(\\d+)");
-		float total = 0;
+		Pattern p = Pattern.compile(">>(\\p{L}+)<<(\\d+(?:,\\d{1,2})?):(\\d+)", Pattern.UNICODE_CHARACTER_CLASS);
 		String linea = IO.readln("> ");
+		float total = 0;
+		StringBuilder sb = new StringBuilder("Compra:\n");
 		while (!linea.equalsIgnoreCase("comprar")) {
 			Matcher m = p.matcher(linea);
 			if (m.matches()) {
-				String nombre = m.group(1);
-				float precio = Float.parseFloat(m.group(2));
-				String cantidad = m.group(3);
-				System.out.println(nombre + " - " + precio + " - " + cantidad);
+				sb.append(m.group(1));
+				float precio = Float.parseFloat(m.group(2).replace(',', '.'));
+				sb.append("(");
+				sb.append(m.group(3));
+				sb.append("), ");
+//				sb.append("(" + m.group(3) + "), ");   asi se pierde la mutabilidad (creo que se dice asi)
+				total += precio * Integer.parseInt(m.group(3));
+				
 			}
 			linea = IO.readln("> ");
 		}
-
+		sb.append("\nImporte Total:\n");
+		sb.append(total);
+		System.out.println(sb.toString());
 	}
-
+	
 }
