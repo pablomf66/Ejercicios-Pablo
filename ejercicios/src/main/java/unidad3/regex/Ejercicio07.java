@@ -1,10 +1,19 @@
 package unidad3.regex;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
 public class Ejercicio07 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) throws IOException {
+		Scanner in = new Scanner(new File(args[0]));
+		Pattern p = Pattern.compile("\"(https?.*?)\"");
+		String url;
+		while ((url = in.findWithinHorizon(p,0)) != null) {
+			System.out.println(url);
+		}
 	}
 
 }
