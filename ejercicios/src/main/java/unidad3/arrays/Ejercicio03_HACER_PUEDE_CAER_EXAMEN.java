@@ -2,7 +2,7 @@ package unidad3.arrays;
 
 import java.util.Random;
 
-public class Ejercicio03 {
+public class Ejercicio03_HACER_PUEDE_CAER_EXAMEN {
 
 	static Random r = new Random();
 	
