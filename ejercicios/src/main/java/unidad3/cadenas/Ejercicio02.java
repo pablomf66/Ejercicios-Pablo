@@ -1,4 +1,4 @@
-package unidad3;
+package unidad3.cadenas;
 
 public class Ejercicio02 {
 
