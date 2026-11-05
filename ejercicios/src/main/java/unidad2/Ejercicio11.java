@@ -15,14 +15,24 @@ public class Ejercicio11 {
 			contador++;
 			n = r.nextInt();
 		}
-
-		if (contador == 0)
+		
+		switch (contador) {
+		case 0:
 			System.out.println("No se han encontrado numeros impares");
-		else 
-			if (contador == 1)
-				System.out.println("Se ha encontrado un numero impar");
-			else
+			break;
+		case 1:
+			System.out.println("Se ha encontrado un numero impar");
+			break;
+			default:
 				System.out.println("Se han encontrado " + contador + " numeros impares");
+		}
+//		if (contador == 0)
+//			System.out.println("No se han encontrado numeros impares");
+//		else 
+//			if (contador == 1)
+//				System.out.println("Se ha encontrado un numero impar");
+//			else
+//				System.out.println("Se han encontrado " + contador + " numeros impares");
 	}
 }
 	/*	

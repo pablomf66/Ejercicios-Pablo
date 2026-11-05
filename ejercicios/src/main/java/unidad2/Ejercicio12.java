@@ -20,7 +20,7 @@ public class Ejercicio12 {
 			
 		if (s > 0) {
 			do {
-				int n = r.nextInt(100, 1000);
+				int n = r.nextInt(900) +100;
 				suma += n;
 				contador++;
 			} while (suma < s);

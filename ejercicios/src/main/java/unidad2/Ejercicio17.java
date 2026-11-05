@@ -12,7 +12,7 @@ public class Ejercicio17 {
 		int otra = 1;
 
 		while (otra == 1) {
-		    int n = r.nextInt(1000, 100001);
+		    int n = r.nextInt( 100001-1000) + 1000;
 		    int n0 = r.nextInt(n) + 1;
 		    int i = 0;
 

@@ -22,26 +22,16 @@ public class Ejercicio02 {
 		// 4. Clasificación según la distancia y los radios
 		if (d == 0) {
             System.out.println("Las circunferencias son CONCÉNTRICAS.");
-        } else {
-            if (d > sumaRadios) {
-                System.out.println("Las circunferencias son EXTERIORES.");
-            } else {
-                if (d == sumaRadios) {
-                    System.out.println("Las circunferencias son TANGENTES EXTERIORES.");
-                } else {
-                    if (d < sumaRadios && d > difRadios) {
-                        System.out.println("Las circunferencias son SECANTES.");
-                    } else {
-                        if (d == difRadios) {
-                            System.out.println("Las circunferencias son TANGENTES INTERIORES.");
-                        } else {
-                            if (d < difRadios) {
-                                System.out.println("Las circunferencias son INTERIORES.");
-                            }
-                        }
-                    }
-                }
-            }
+        } else if (d > sumaRadios) {
+            System.out.println("Las circunferencias son EXTERIORES.");
+        } else if (d == sumaRadios) {
+            System.out.println("Las circunferencias son TANGENTES EXTERIORES.");
+        } else if (d < sumaRadios && d > difRadios) {
+            System.out.println("Las circunferencias son SECANTES.");
+        } else if (d == difRadios) {
+            System.out.println("Las circunferencias son TANGENTES INTERIORES.");
+        } else if (d < difRadios) {
+            System.out.println("Las circunferencias son INTERIORES.");
         }
     }
 }
