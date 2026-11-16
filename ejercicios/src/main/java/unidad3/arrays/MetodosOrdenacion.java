@@ -12,6 +12,9 @@ public class MetodosOrdenacion {
 		System.out.println();
 		seleccionDirecta(v);
 		System.out.println(Arrays.toString(v));
+		System.out.println();
+		intercambioDirecto(v);
+		System.out.println(Arrays.toString(v));
 	}
 
 	public static void insercionDirecta(int[] v) {
@@ -28,17 +31,29 @@ public class MetodosOrdenacion {
 		}
 	}
 
-	public static void seleccionDirecta(int[] v) {    // revisar q esta mal
-		for (int i = 1; i < v.length; i++) {
-			int j = 0;
-			for (int k = i + 1; k < j; j++) {
-				if (v[k] < v[j])
-					j = k;
+	public static void seleccionDirecta(int[] v) {
+		for (int i = 0; i < v.length - 1; i++) {
+			int min = i;
+			for (int j = i + 1; j < v.length; j++) {
+				if (v[min] > v[j])
+					min = j;
 			}
-			
 			int aux = v[i];
-            v[j] = v[i];
-            v[j] = aux;
+			v[i] = v[min];
+			v[min] = aux;;
+			
+		}
+	}
+	
+	public static void intercambioDirecto(int[] v) {
+		for (int i = 0; i<v.length -1;i++) {
+			for (int j = v.length-1; j>i; j--) {
+				if (v[j] < v[j-1]) {
+					int aux = v[j];
+					v[j] = v[j-1];
+					v[j-1] = aux;
+				}
+			}
 		}
 	}
 }
