@@ -1,10 +1,24 @@
 package unidad3.arrays;
 
+import java.util.ArrayList;
+
 public class Ejercicio08 {
 	
 	public static void main(String[] args) {
-		String [] nombres = new String[10];
+		ArrayList<String> lista = new ArrayList<>();
+		String nombre;
+		while ((nombre = IO.readln("Nombre: ")) != null) {
+			lista.add(nombre);
+		}
+		String max = null;
+		for (String s: lista)
+			if (max == null || s.length() > max.length())
+				max = s;
+		System.out.println(max);
 		
-		
+		IO.println();
+		IO.println(lista);
+		IO.println(lista.get(1));
+		System.out.println(lista.size());
 	}
 }
