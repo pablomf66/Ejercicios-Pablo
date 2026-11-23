@@ -1,26 +1,26 @@
-package unidad4_POO;
+package unidad4_POO.ejemplos;
 
 import java.awt.Color;
 
-public class Automovil {
+public class Automovil_InventadoProfe {
 
 	private Color color;
 	private int puertas;
 	private String combustible;
 	private int potencia;
 
-	public Automovil(Color color, int puertas, String combustible, int potencia) {
+	public Automovil_InventadoProfe(Color color, int puertas, String combustible, int potencia) {
 		this.color = color;
 		this.puertas = puertas;
 		this.combustible = combustible;
 		this.potencia = potencia;
 	}
 
-	public Automovil(int puertas, String combustible, int potencia) {
+	public Automovil_InventadoProfe(int puertas, String combustible, int potencia) {
 		this(Color.WHITE, puertas, combustible, potencia);
 	}
 
-	public Automovil() {
+	public Automovil_InventadoProfe() {
 	}
 
 	public Color getColor() {
@@ -56,7 +56,7 @@ public class Automovil {
 	}
 
 	public static void main(String[] args) {
-		Automovil a = new Automovil();
+		Automovil_InventadoProfe a = new Automovil_InventadoProfe();
 		a.color = Color.RED;
 	}
 
@@ -64,7 +64,7 @@ public class Automovil {
 
 class Prueba {
 	public static void main(String[] args) {
-		Automovil a = new Automovil();
+		Automovil_InventadoProfe a = new Automovil_InventadoProfe();
 		System.out.println(a.getColor());
 		a.setColor(Color.GREEN);
 		a.setPotencia(500);

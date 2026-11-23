@@ -1,4 +1,4 @@
-package unidad4_POO;
+package unidad4_POO.ejemplos;
 
 public class Ejemplo_IA {
 

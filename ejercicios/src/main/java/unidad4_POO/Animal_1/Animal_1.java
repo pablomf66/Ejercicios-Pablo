@@ -1,20 +1,20 @@
-package unidad4_POO;
+package unidad4_POO.Animal_1;
 
 import java.time.LocalDate;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-public class Animal {
+public class Animal_1 {
 	
 	private String nombre;
 	private LocalDate fecha;
 	
-	public Animal(String nombre, LocalDate fecha) {
+	public Animal_1(String nombre, LocalDate fecha) {
 		this.nombre = nombre;
 		this.fecha = fecha;
 	}
 	
-	public Animal(String nombre) {
+	public Animal_1(String nombre) {
 		this(nombre, LocalDate.now());
 		
 //		  ----o tambien----
@@ -35,7 +35,7 @@ public class Animal {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Animal other = (Animal) obj;
+		Animal_1 other = (Animal_1) obj;
 		return Objects.equals(fecha, other.fecha) && Objects.equals(nombre, other.nombre);
 	}
 
