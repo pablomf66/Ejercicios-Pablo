@@ -25,6 +25,7 @@ public class RetratoRobot {
 		for (int i = 2; i<opciones.get(0).size(); i++) {
 			o += i + " - " + opciones.get(0).get(i);
 		}
+		return "h";
 	}
 	
 	private int [] rasgos = new int[5];
