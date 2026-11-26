@@ -31,12 +31,26 @@ public class Ejercicio05 {
 		return media;
 	}
 	
+	static int contarPalabras(String[] palabras, String buscada) {
+		int contador = 0;
+		for (int i = 0; i<palabras.length; i++) {
+			if (palabras[i].contains(buscada)) {
+				contador++;
+			}
+		}
+		return contador;
+	}
+	
 	public static void main(String[] args) {
 		int v[] = {0,-2,5,8};
 		System.out.println("Valor maximo: " + encontrarValorMaximo(v));
 		
 		int[] v1 = {5,7,9};
 		System.out.println("Media exacta: " + mediaExacta(v1));
+		
+		String [] palabras = {"casa", "caseta", "perro", "ocasión"};
+		String buscada = "cas";
+		System.out.println(contarPalabras(palabras, buscada));
 
 	}
 
